@@ -236,21 +236,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.5 }}
-      >
-        <motion.div 
-          className="w-7 h-12 border-2 border-primary/30 rounded-full flex justify-center glass"
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <div className="w-1.5 h-3 bg-primary/60 rounded-full mt-2"></div>
-        </motion.div>
-      </motion.div>
 
       <style>{`
         @keyframes grid-move {
